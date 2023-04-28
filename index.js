@@ -1,10 +1,11 @@
-import express from "express"
-import cors from "cors";
+const express = require("express")
+const cors = require("cors")
 
+// import categoryData from './database/categories.json' assert {type: 'json'}
+// import newsData from './database/news.json' assert {type: 'json'}
 
-import categoryData from './database/categories.json' assert {type: 'json'}
-import newsData from './database/news.json' assert {type: 'json'}
-
+const categoryData = require("./database/categories.json")
+const newsData = require("./database/news.json")
 
 const app = express()
 app.use(cors())
